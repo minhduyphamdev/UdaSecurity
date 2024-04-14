@@ -14,17 +14,17 @@ import javax.swing.*;
  */
 public class SensorPanel extends JPanel {
 
-    private SecurityService securityService;
+    private final SecurityService securityService;
 
-    private JLabel panelLabel = new JLabel("Sensor Management");
-    private JLabel newSensorName = new JLabel("Name:");
-    private JLabel newSensorType = new JLabel("Sensor Type:");
-    private JTextField newSensorNameField = new JTextField();
-    private JComboBox newSensorTypeDropdown = new JComboBox(SensorType.values());
-    private JButton addNewSensorButton = new JButton("Add New Sensor");
+    private final JLabel panelLabel = new JLabel("Sensor Management");
+    private final JLabel newSensorName = new JLabel("Name:");
+    private final JLabel newSensorType = new JLabel("Sensor Type:");
+    private final JTextField newSensorNameField = new JTextField();
+    private final JComboBox newSensorTypeDropdown = new JComboBox(SensorType.values());
+    private final JButton addNewSensorButton = new JButton("Add New Sensor");
 
-    private JPanel sensorListPanel;
-    private JPanel newSensorPanel;
+    private final JPanel sensorListPanel;
+    private final JPanel newSensorPanel;
 
     public SensorPanel(SecurityService securityService) {
         super();

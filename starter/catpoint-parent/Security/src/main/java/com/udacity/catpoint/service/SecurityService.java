@@ -5,6 +5,7 @@ import com.udacity.catpoint.data.AlarmStatus;
 import com.udacity.catpoint.data.ArmingStatus;
 import com.udacity.catpoint.data.SecurityRepository;
 import com.udacity.catpoint.data.Sensor;
+import com.udacity.catpoint.image.service.FakeImageService;
 
 import java.awt.image.BufferedImage;
 import java.util.HashSet;
@@ -19,9 +20,9 @@ import java.util.Set;
  */
 public class SecurityService {
 
-    private FakeImageService imageService;
-    private SecurityRepository securityRepository;
-    private Set<StatusListener> statusListeners = new HashSet<>();
+    private final FakeImageService imageService;
+    private final SecurityRepository securityRepository;
+    private final Set<StatusListener> statusListeners = new HashSet<>();
 
     public SecurityService(SecurityRepository securityRepository, FakeImageService imageService) {
         this.securityRepository = securityRepository;
