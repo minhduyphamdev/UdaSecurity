@@ -125,7 +125,6 @@ public class SecurityService {
      * Change the activation status for the specified sensor
      *
      * @param sensor
-     * @param active
      */
     public void changeSensorActivationStatus(Sensor sensor) {
         AlarmStatus alarmStatus = this.getAlarmStatus();
